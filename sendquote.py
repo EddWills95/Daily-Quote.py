@@ -60,11 +60,11 @@ def getSend():
 				<h2>What they said: <br><span>%s</span></h2>
 				<br>
 				<br>
-				<h3><i>Another Quote From <em>Kirsten's Quotes</em></i></h3>
+				<h3><i>Another Quote From <em>%s's Quotes</em></i></h3>
 			</div>
 		</body>
 	</html>
-	""" % (name, author, quote)
+	""" % (name, author, quote, name)
 
 	part1 = MIMEText(text, 'plain')
 	part2 = MIMEText(html, 'html')
