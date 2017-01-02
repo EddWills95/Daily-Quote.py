@@ -49,7 +49,7 @@ def getSend():
 		</head>
 		<body>
 			<div class="text">
-				<h1>Good Morning Kirsten</h1>
+				<h1>Good Morning %s</h1>
 				<br>
 				<h2>I've got a quote for you</h2>
 				<br>
@@ -62,7 +62,7 @@ def getSend():
 			</div>
 		</body>
 	</html>
-	""" % (author, quote)
+	""" % (name, author, quote)
 
 	part1 = MIMEText(text, 'plain')
 	part2 = MIMEText(html, 'html')
