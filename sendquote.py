@@ -29,6 +29,8 @@ def getSend():
 
 	quote = desctemp[14:-17]
 
+	name = config.name
+	
 	host = 'smtp.gmail.com'
 	port = 587
 	myemail = config.username
@@ -37,7 +39,7 @@ def getSend():
 	sendto = config.recipient  # change this later.
 
 	msg = MIMEMultipart('alternative')
-	msg['Subject'] = "Kirsten's Quote of the Day"
+	msg['Subject'] = "%s's Quote of the Day" % (name)
 	msg['From'] = myemail
 	msg['To'] = sendto
 
