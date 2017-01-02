@@ -12,3 +12,9 @@ This is then sent to whoever you want.
 The settings for which are in the config file.
 
 You will need to change the settings in the main python file if you want to use another emailing service other than GMail. 
+
+If any of the import statements don't work then just use 
+
+//pip install 
+
+to install the relevant packages
