@@ -15,6 +15,6 @@ You will need to change the settings in the main python file if you want to use 
 
 If any of the import statements don't work then just use 
 
-//pip install 
+    pip install 
 
 to install the relevant packages
