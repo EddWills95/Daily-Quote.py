@@ -36,7 +36,7 @@ def getSend():
 	myemail = config.username
 	mypassword = config.password
 
-	sendto = config.recipient  # change this later.
+	sendto = config.recipient
 
 	msg = MIMEMultipart('alternative')
 	msg['Subject'] = "%s's Quote of the Day" % (name)
