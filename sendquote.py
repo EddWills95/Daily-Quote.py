@@ -72,8 +72,7 @@ def getSend():
 	msg.attach(part1)
 	msg.attach(part2)
 
-	print
-	"Conecting..."
+	print("Conecting...")
 
 	server = smtplib.SMTP(host, port)
 
@@ -82,12 +81,11 @@ def getSend():
 
 	server.login(myemail, mypassword)
 
-	print
-	"Sent"
+	print("Sent")
 	server.sendmail(myemail, sendto, msg.as_string())
 	server.close()
 
-	file = []
+	del file
 
 
 schedule.every().day.at("9:30").do(getSend)
